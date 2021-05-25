@@ -12,6 +12,8 @@ using SIR.Datos.Concretos.Archivo;
 using SIR.Datos.Interfaces.Archivo;
 using SIR.Datos.Interfaces.Parametrizacion_SIR;
 using SIR.Datos.Concretos.Parametrizacion_SIR;
+using SIR.Datos.Interfaces.Formatos_SIR;
+using SIR.Datos.Concretos.Formato_SIR;
 
 namespace SIR.Datos.Fabrica
 {
@@ -28,5 +30,6 @@ namespace SIR.Datos.Fabrica
         public static IAuditoriaDatos CrearAuditoriaDatos => new AuditoriaDatos();
         public static IArchivoDatos CrearArchivoDatos => new ArchivoDatos();
         public static ICliente_ExcluidoDatos CrearCliente_Excluido => new Cliente_ExcluidoDatos();
+        public static ICargaFormatoDatos CargaFormato_Datos => new FormatoDatos();
     }
 }
